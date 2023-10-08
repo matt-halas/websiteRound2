@@ -1,0 +1,50 @@
+{% extends "website/layout.html" %}
+{% block body %}
+    <h1>Matthew Halas</h1>
+    <p>
+        Hello, I am a recently graduated mechanical engineer, currently gaining
+        hands on experience in the field as a Wind Turbine Technician. I am
+        passionate about the field of alternative energy, and love solving
+        challenging problems.
+    </p>
+    <img src="static/website/matt.jpg" width="400px">
+
+    <a href="{% url 'projectView' 'volvo' %}">
+        <div class="card">
+            <img src="static/website/volvo_images/combustor.gif" alt="Volvo" class="cardImage">
+            <div class="container">
+                <h4><b>Validation of CFD solver in OpenFOAM</b></h4>
+                <p>
+                    Using the Volvo afterburner common research model to
+                    validate a new computational fluid dynamics solver
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <div class="card">
+        <img src="static/website/CFD_images/preview.png" alt="CFD solver" class="cardImage">
+        <div class="container">
+            <h4><b>Real time fluid simulator</b></h4>
+            <p>
+                My take on a real time CFD solver written in javascript
+            </p>
+        </div>
+    </div>
+
+    <h2>Blog</h2>
+
+    <ul>
+        <li class="post-list-item">
+            <a href="bike-trip-week-1">Biking from Calgary to Vancouver - Week 1</a>
+        </li>
+
+        <li class="post-list-item">
+            <a href="bike-trip-week-2">Biking from Calgary to Vancouver - Week 2</a>
+        </li>
+
+        <li class="post-list-item">
+            <a href="bike-trip-week-3">Biking from Calgary to Vancouver - Week 3</a>
+        </li>
+    </ul>
+{% endblock %}

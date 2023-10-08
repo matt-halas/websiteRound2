@@ -13,6 +13,13 @@ def index(request):
 
 def projectView(request, projectTitle):
     entry = get_entry(projectTitle)
-    return render(request, 'website/project.html', {
-        'content': markdown(entry)
-    })
+    if entry != None:
+        return render(request, 'website/project.html', {
+            'content': markdown(entry)
+        })
+    else:
+        return render(request, 'website/project.html')
+
+
+def fluidSim(request):
+    return render(request, 'website/fluidSim.html')

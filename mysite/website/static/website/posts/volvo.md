@@ -17,7 +17,7 @@ My focus for this project was on the engine of the UAV. For this analysis, we us
 
 ## Background
 
-More information about this validation case can be found [here](https://community.apan.org/cfs-file/__key/widgetcontainerfiles/3fc3f82483d14ec485ef92e206116d49-g-_2D00_tM6tEO4PkenM5KsnY8ctg-page-0cases/MVP2_5F00_Validation_5F00_Case_5F00_Final.pdf){target=_blank}. The report covers the boundary conditions, domain, and experimental data for this case.
+More information about this validation case can be found [here](https://community.apan.org/cfs-file/__key/widgetcontainerfiles/3fc3f82483d14ec485ef92e206116d49-g-_2D00_tM6tEO4PkenM5KsnY8ctg-page-0cases/MVP2_5F00_Validation_5F00_Case_5F00_Final.pdf). The report covers the boundary conditions, domain, and experimental data for this case.
 
 ### Mesh
 
@@ -128,7 +128,7 @@ Selecting the correct combustion mechanism proved to be difficult for this case.
 
 <img style="background-color: white; border: 10px solid #FFFFFF;" src="https://latex.codecogs.com/svg.image?C_3H_8&plus;5O_2\rightarrow&space;3CO_2&plus;4H_2O" alt=""/>
 
-In reality, the reaction between propane and oxygen involves many intermediate products. The complexity of these models varies greatly, with one detailed propane/air combustion mechanism involving 107 reactions and 31 species. Using a mechanism of this complexity would greatly increase the computational time required to run the solver, so a simpler mechanism was used. A single step mechanism often overpredicts the flame temperature as it assumes all propane reacts fully, so a compromise was to use a two step mechanism. More details on the reaction mechanism used and the available reaction mechanisms can be found on the [Cerfacs website](https://www.cerfacs.fr/cantera/mechanisms/prop.php){:target="_blank"}.
+In reality, the reaction between propane and oxygen involves many intermediate products. The complexity of these models varies greatly, with one detailed propane/air combustion mechanism involving 107 reactions and 31 species. Using a mechanism of this complexity would greatly increase the computational time required to run the solver, so a simpler mechanism was used. A single step mechanism often overpredicts the flame temperature as it assumes all propane reacts fully, so a compromise was to use a two step mechanism. More details on the reaction mechanism used and the available reaction mechanisms can be found on the [Cerfacs website](https://www.cerfacs.fr/cantera/mechanisms/prop.php)[newtab].
 
 In addition to the combustion mechanisms, the data found on the Cerfacs website included transport and thermodynamic properties for each of the species involved in the reaction.
 

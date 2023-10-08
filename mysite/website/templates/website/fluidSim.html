@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<meta charset="UTF-8">
-<head>
-    <title>Fluid Sim</title>
-    <link rel="stylesheet" href="static/website/fluidSimResources/style.css">
-</head>
+{% extends "website/layout.html" %}
+{% block body %}
+
 <body>
     <script type="module" src="static/website/fluidSimResources/solverFunctions.js"></script>
     <canvas id="fluidCanvas"></canvas>
     <script src="static/website/fluidSimResources/utils.js"></script>
     <script src="static/website/fluidSimResources/particle.js"></script>
-    <script src="static/website/fluidSimResources/main.js"></script>
+    <script type="module" src="static/website/fluidSimResources/main.js"></script>
     <div>
         <p style="color:black">Viscosity:</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="viscRange">
@@ -25,3 +22,5 @@
     </div>
     
 </body>
+
+{% endblock %}

@@ -9,8 +9,9 @@
     </p>
     <img src="static/website/matt.jpg" width="400px">
 
-    <a href="{% url 'projectView' 'volvo' %}">
-        <div class="card">
+    
+    <div class="card">
+        <a href="{% url 'projectView' 'volvo' %}">
             <img src="static/website/volvo_images/combustor.gif" alt="Volvo" class="cardImage">
             <div class="container">
                 <h4><b>Validation of CFD solver in OpenFOAM</b></h4>
@@ -19,11 +20,12 @@
                     validate a new computational fluid dynamics solver
                 </p>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
 
-    <a href="{% url 'fluidSim' %}">
-        <div class="card">
+
+    <div class="card">
+        <a href="{% url 'fluidSim' %}">
             <img src="static/website/CFD_images/preview.png" alt="CFD solver" class="cardImage">
             <div class="container">
                 <h4><b>Real time fluid simulator</b></h4>
@@ -31,22 +33,22 @@
                     My take on a real time CFD solver written in javascript
                 </p>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
 
     <h2>Blog</h2>
 
     <ul>
         <li class="post-list-item">
-            <a href="bike-trip-week-1">Biking from Calgary to Vancouver - Week 1</a>
+            <a href="{% url 'projectView' 'bike-trip-week-1' %}">Biking from Calgary to Vancouver - Week 1</a>
         </li>
 
         <li class="post-list-item">
-            <a href="bike-trip-week-2">Biking from Calgary to Vancouver - Week 2</a>
+            <a href="{% url 'projectView' 'bike-trip-week-2' %}">Biking from Calgary to Vancouver - Week 2</a>
         </li>
 
         <li class="post-list-item">
-            <a href="bike-trip-week-3">Biking from Calgary to Vancouver - Week 3</a>
+            <a href="{% url 'projectView' 'bike-trip-week-3' %}">Biking from Calgary to Vancouver - Week 3</a>
         </li>
     </ul>
 {% endblock %}

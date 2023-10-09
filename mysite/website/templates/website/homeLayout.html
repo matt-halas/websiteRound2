@@ -5,7 +5,9 @@
         <link rel="stylesheet" href="static/website/style.css">
     </head>
     <body>
-        <h4><a href="{% url 'index' %}">Home</a></h4>
+        <h4><a href="{% url 'about' %}">About</a></h4>
+        <h4><a href="{% url 'contact' %}">Contact</a></h4>
+        <h4><a href="{% url 'resume' %}">Resume</a></h4>
         <hr>
         {% block body %}
         {% endblock %}

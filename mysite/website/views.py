@@ -23,3 +23,15 @@ def projectView(request, projectTitle):
 
 def fluidSim(request):
     return render(request, 'website/fluidSim.html')
+
+
+def about(request):
+    return render(request, 'website/about.html')
+
+
+def contact(request):
+    return render(request, 'website/contact.html')
+
+
+def resume(request):
+    return render(request, 'website/resume.html')

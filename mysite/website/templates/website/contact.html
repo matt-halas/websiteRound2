@@ -1,13 +1,25 @@
 {% extends "website/layout.html" %}
 
 {% block body %}
-    <h5>
-        <a href="https://www.linkedin.com/in/matthew-halas/">LinkedIn</a>
-    </h5>
-    <h5>
-        <a href="mailto:m.halas04@example.com">Email</a>
-    </h5>
-    <h5>
-        <p>Phone: (587) 703-2998</p>
-    </h5>
+    <div class="contact-container">
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/matthew-halas/" target="_blank">
+                <img src="static/website/linkedin.png" width="150px">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="mailto:m.halas04@gmail.com">
+                <img src="static/website/email.png" width="225px">
+            </a>
+        </div>
+        <div class="contact-item">
+            <div class="phone-container">
+                <img src="static/website/phone.png" width="200px">
+                
+                <div class="phone-overlay">
+                    <div class="phone-text">(587) 703-2998</div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

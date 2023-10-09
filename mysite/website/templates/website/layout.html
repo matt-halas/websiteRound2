@@ -5,9 +5,33 @@
         <link rel="stylesheet" href="static/website/style.css">
     </head>
     <body>
-        <h4><a href="{% url 'index' %}">Home</a></h4>
-        <hr>
-        {% block body %}
-        {% endblock %}
+        <div class="wrapper">
+            <div class="header-container">
+                <div class="header-item">
+                    <a href="{% url 'index' %}">
+                        <h3>Home</h3>    
+                    </a>
+                </div>
+                <div class="header-item">
+                    <h3><a href="{% url 'about' %}">
+                        About
+                    </a></h3>
+                </div>
+                <div class="header-item">
+                    <h3><a href="{% url 'contact' %}">
+                        Contact
+                    </a></h3>
+                </div>
+                <div class="header-item">
+                    <h3><a href="{% url 'resume' %}">
+                        Resume
+                    </a></h3>
+                </div>
+            </div>
+            <div class="content">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
     </body>
 </html>

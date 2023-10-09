@@ -6,10 +6,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('fluidSim.html', views.fluidSim, name='fluidSim'),
-    path('about.html', views.about, name='about'),
-    path('contact.html', views.contact, name='contact'),
-    path('resume.html', views.resume, name='resume'),
+    path('fluidSim', views.fluidSim, name='fluidSim'),
+    path('about', views.about, name='about'),
+    path('contact', views.contact, name='contact'),
+    path('resume', views.resume, name='resume'),
     path('<str:projectTitle>', views.projectView, name='projectView')
 ]
 

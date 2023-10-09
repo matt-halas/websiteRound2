@@ -1,3 +1,45 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td  {
+  border: 1px solid black;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0%;
+  padding:0%;
+  background-color: beige;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+}
+
+.content {
+  overflow-y: scroll;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -5,6 +47,8 @@
   border-radius: 40px;
   width: 300px;
   height: 400px;
+  margin: 15px;
+  background-color: lavender;
 }
 
 .cardImage{
@@ -25,8 +69,117 @@
   padding: 2px 16px;
   text-align: center;
   padding-bottom: 20px;
+  color: black;
 }
 
-body {
-  font-family: 'Trebuchet MS', sans-serif;
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lavender;
+  margin: 0%;
+  padding: 0%;
+}
+
+.header-item{
+  text-align: center;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  color: black;
+}
+
+.bio-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bio-item{
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  align-self: center;
+}
+
+.bio-pic{
+  object-fit: cover;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+
+.project-div{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-container{
+  display: flex;
+  align-items: start;
+}
+
+.post-list-item{
+  margin: 10px 0;
+}
+
+.project-post{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-container {
+  display:flex;
+  align-items:justify;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.contact-item {
+  align-self: center;
+}
+
+.phone-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lavender;
+  border-radius:20px;
+}
+
+.phone-text {
+  color: black;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contact-item:hover .phone-overlay {
+  opacity: 0.75;
+}
+
+.phone-container {
+  position: relative;
+  width:100%;
 }

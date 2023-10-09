@@ -1,5 +1,6 @@
-# Validation of reactingRhoPimpleCentralFoam solver
-
+<h1 style="text-align: center;">
+Validation of reactingRhoPimpleCentralFoam solver
+</h1>
 <img src="static/website/CFD_images/combustor_gif.gif" alt="" width="80%"/>
 <p style="text-align: center;"><i>Figure 1: Coarse mesh combustion in Volvo Afterburner</i></p>
 
